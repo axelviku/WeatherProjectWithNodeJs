@@ -18,11 +18,14 @@ app.get("/", (req,res) =>{
 });
             
 app.get("/about", (req,res) =>{
-    res.render('about');;
+    res.render('about');
 });
 
 app.get("/weather", (req,res) =>{
-    res.render('weather')
+    res.render('weather');
+})
+app.get("/rds", (req,res) =>{
+    res.render('rds');
 })
 
 
