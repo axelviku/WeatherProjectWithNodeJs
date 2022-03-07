@@ -52,7 +52,21 @@
             created with ❤ by Vikrant
         </p>
     </footer>
+    <script>
+        const d = new Date();
+        let month = d.getMonth();
+        let day = d.getDay();
 
+        var dd = String(d.getDate()).padStart(2, '0');
+        console.log("day", day, dd);
+        var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+
+        document.getElementById('today_date').innerText = dd + ' ' + ' ' + monthNames[month];
+        document.getElementById('day').innerText = daylist[day];
+    </script>
     <script src="js/main.js"></script>
 </body>
 
